@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+/* font-family: 'Nothing You Could Do', cursive; */
+
+*{
+    border: 0;
+    margin: 0;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-image{
+    background-image: url(sunset.jpg);
+    width: 40%;
+    height: 100%;
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+.name{
+    background-color: rgb(202, 193, 95);
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    padding: 3rem 0;
+    font-family: 'Nothing You Could Do', cursive;
+    opacity: 40%;
+}
+
+.right-info{
+    background-color: orange;
+}
