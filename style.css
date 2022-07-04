@@ -4,11 +4,13 @@
 *{
     border: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .content{
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
 .left-image{
@@ -16,8 +18,7 @@
     width: 40%;
     height: 100%;
     background-position: center;
-    background-size: 200%;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 .name{
     background-color: rgb(202, 193, 95);
@@ -31,4 +32,38 @@
 
 .right-info{
     background-color: orange;
+    width: 60%;
+    font-size: 2rem;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.opening-sentence{
+    background-color: purple;
+    padding: 0 2rem;
+}
+
+.form-container{
+    background-color: aqua;
+    padding: 1rem 3rem;
+}
+
+.user-inputs-container{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.user-input{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 100%;
+    margin: 0;
+t}
+label{
 }
