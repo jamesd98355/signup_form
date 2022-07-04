@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-/* font-family: 'Nothing You Could Do', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nothing+You+Could+Do&display=swap');/* font-family: 'Nothing You Could Do', cursive; */
+
+:root{
+    --paddingLeft: 2rem;
+    --rightSideColor: rgb(229, 229, 229);
+    --logoFont: 'Nothing You Could Do', cursive;
+    --websiteFont: 'Arvo', serif;
+    --loginButton: rgb(50, 201, 121);
+}
 
 *{
     border: 0;
@@ -21,33 +28,33 @@
     background-size: cover;
 }
 .name{
-    background-color: rgb(202, 193, 95);
+    background: rgba(203, 154, 111, 0.4);
     position: relative;
     top: 20vh;
     text-align: center;
-    padding: 3rem 0;
-    font-family: 'Nothing You Could Do', cursive;
-    opacity: 40%;
+    padding: 2rem 0;
+    font-family: var(--logoFont);
 }
 
 .right-info{
-    background-color: orange;
+    background-color: var(--rightSideColor);
     width: 60%;
     font-size: 2rem;
     padding: 8rem 0;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    font-family: var(--websiteFont);
 }
 
 .opening-sentence{
-    background-color: purple;
-    padding: 0 2rem;
+    padding: 0 var(--paddingLeft);
 }
 
 .form-container{
-    background-color: aqua;
-    padding: 1rem 3rem;
+    background-color: white;
+    padding: 1rem var(--paddingLeft);
+    padding-bottom: 2rem;
 }
 
 .user-inputs-container{
@@ -55,6 +62,7 @@
     width: 80%;
     flex-wrap: wrap;
     gap: 4rem;
+    padding-top: 1rem;
 }
 .user-input{
     width: 45%;
@@ -63,7 +71,29 @@
 }
 input{
     width: 100%;
-    margin: 0;
-t}
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(191, 191, 191);   
+}
 label{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.bottom-section{
+    padding-left: var(--paddingLeft);
+}
+#submit-button{
+    padding: 1rem 3rem;
+    background-color: var(--loginButton);
+    border-radius: 0.5rem;
+    color: rgb(235, 235, 235);
+    margin-top: 2rem;
+}
+.already-have-account{
+    font-size: 1.5rem;
+}
+
+#login{
+    color: var(--loginButton);
 }
