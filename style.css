@@ -62,7 +62,7 @@
     width: 80%;
     flex-wrap: wrap;
     gap: 4rem;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 .user-input{
     width: 45%;
@@ -74,7 +74,26 @@ input{
     height: 2rem;
     border-radius: 0.2rem;
     border: 1px solid rgb(191, 191, 191);   
+    padding-left: 2rem;
+
 }
+
+input:invalid:not(:placeholder-shown){
+    background: url(cross.svg);
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    background-position: 0.3rem 0.3rem;
+    border-color: red;
+
+}
+input:valid{
+    border-color: greenyellow;
+    background: url(check.svg);
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    background-position: 0.3rem 0.3rem;
+}
+
 label{
     font-size: 1.2rem;
     text-transform: uppercase;
